@@ -46,19 +46,15 @@ contract Poseidon {
 
 		uint t = inputs.length + 1; // 3
 
-		uint[3] storage state;
-		uint[3] storage res;
+		uint[3] memory state;
+		uint[3] memory res;
 
-		state.push(0);
-
-		for(uint8 i = 1; i < t; i++) {
-			state.push(inputs[i]);
-		}
-
-		res.push(0);
+		state[0] = 0;
+		res[0] = 0;
 
 		for(uint8 i = 1; i < t; i++) {
-			res.push(inputs[i]);
+			state[i] = inputs[i];
+			res[i] = inputs[i];
 		}
 
 		// rondomizing inputs (entries in row 1 and 2 in a column vector. row 0 has entry 0 initially)
