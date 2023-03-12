@@ -7,6 +7,6 @@ describe("Poseidon contract", function () {
     const Poseidon = await ethers.getContractFactory("Poseidon")
     const _poseidon = await Poseidon.deploy()
     const hash = await _poseidon.hash([3, 5])
-    expect(poseidon([3, 5]).toString()).to.equal(hash.toString())
+    expect(hash.toString()).to.equal(poseidon([3, 5]).toString())
   })
 })
