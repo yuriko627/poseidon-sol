@@ -1,4 +1,25 @@
 {
+  "name": "poseidon-sol",
+  "version": "0.1.0",
+  "description": "implementation of Poseidon hash function in Solidity",
+  "engines": {
+    "node": ">= 16 <20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuriko627/poseidon-sol"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Yuriko Nishiijima",
+    "email": "yuriko.nishijima@gmail.com"
+  },
+  "keywords": [
+    "hash function",
+    "zero-knowledge proof",
+    "ethereum",
+    "solidity"
+  ],
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
     "@ethersproject/providers": "^5.4.7",
@@ -12,11 +33,17 @@
     "@types/chai": "^4.2.0",
     "@types/mocha": ">=9.1.0",
     "@types/node": ">=12.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "big-integer": "^1.6.51",
     "chai": "^4.2.0",
+    "circomlibjs": "^0.0.8",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
     "ethers": "^5.4.7",
     "hardhat": "^2.12.7",
     "hardhat-gas-reporter": "^1.0.8",
-    "solidity-coverage": "^0.8.0",
+    "prettier": "2.8.4",
+    "solidity-coverage": "^0.8.2",
     "ts-node": ">=8.0.0",
     "typechain": "^8.1.0",
     "typescript": ">=4.5.0"
