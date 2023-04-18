@@ -32,14 +32,14 @@ jobs:
         cache: 'npm'
         cache-dependency-path: package-lock.json
 
-    - name: Print System Information
-      run: echo "Platform: $(uname -a)"
-
     - name: Install dependencies
       run: npm install --no-optional
 
     - name: Build
       run: npx hardhat compile
+
+    # - name: Lint
+    #   run: npx hardhat lint
 
     - name: Test
       run: npx hardhat coverage
