@@ -29,20 +29,20 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        # cache-dependency-path: package-lock.json
+        cache: 'yarn'
+        cache-dependency-path: yarn.lock
 
     - name: Install dependencies
-      run: npm install --no-optional
+      run: yarn
 
     - name: Build
-      run: npx hardhat compile
+      run: ./node_modules/.bin/hardhat compile
 
     # - name: Lint
     #   run: npx hardhat lint
 
     - name: Test
-      run: npx hardhat coverage
+      run: ./node_modules/.bin/hardhat coverage
 
     - name: Upload coverage
       uses: codecov/codecov-action@v3
