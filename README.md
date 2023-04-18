@@ -6,7 +6,7 @@ Poseidon Hash Function implementation in Solidity
 
 ![](https://img.shields.io/hexpm/l/plug?color=green)
 ![GitHub issues](https://img.shields.io/github/issues/yuriko627/poseidon-sol)
-[![Build Status](https://github.com/yuriko627/poseidon-sol/workflows/Build%20Status/badge.svg?branch=main)](https://github.com/yuriko627/poseidon-sol/workflows/actions?query=workflow%3A%22Build+Status%22)
+[![Build Status](https://github.com/yuriko627/poseidon-sol/workflows/Build%20Status/badge.svg?branch=main)](https://img.shields.io/github/actions/workflow/status/yuriko627/poseidon-sol/workflow.yml?branch=main)
 [![codecov](https://codecov.io/gh/yuriko627/poseidon-sol/branch/main/graph/badge.svg)](https://codecov.io/gh/yuriko627/poseidon-sol)
 
 ## Description
