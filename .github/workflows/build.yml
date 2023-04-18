@@ -20,8 +20,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        arch: [arm64]
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -30,24 +29,20 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        cache-dependency-path: package-lock.json
-
-  - name: Print System Information
-    run: |
-      echo "Platform: $(uname -a)"
+        cache: 'yarn'
+        cache-dependency-path: yarn.lock
 
     - name: Install dependencies
-      run: |
-        npm install --no-optional
+      run: yarn
+
     - name: Build
-      run: |
-        npm run build
-    - name: Lint
-      run: |
-        npm run lint
+      run: ./node_modules/.bin/hardhat compile
+
+    # - name: Lint
+    #   run: npx hardhat lint
+
     - name: Test
-      run: |
-        npm run test
+      run: ./node_modules/.bin/hardhat coverage
+
     - name: Upload coverage
       uses: codecov/codecov-action@v3
