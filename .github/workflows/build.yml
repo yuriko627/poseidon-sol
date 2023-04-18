@@ -20,8 +20,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        arch: [arm64]
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -33,9 +32,9 @@ jobs:
         cache: 'npm'
         cache-dependency-path: package-lock.json
 
-  - name: Print System Information
-    run: |
-      echo "Platform: $(uname -a)"
+    - name: Print System Information
+      run: |
+        echo "Platform: $(uname -a)"
 
     - name: Install dependencies
       run: |
@@ -49,5 +48,6 @@ jobs:
     - name: Test
       run: |
         npm run test
+
     - name: Upload coverage
       uses: codecov/codecov-action@v3
