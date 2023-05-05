@@ -1,6 +1,6 @@
 {
   "name": "poseidon-sol",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "implementation of Poseidon hash function in Solidity",
   "engines": {
     "node": ">= 16 <20"
