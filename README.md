@@ -8,6 +8,7 @@ Poseidon Hash Function implementation in Solidity
 ![GitHub issues](https://img.shields.io/github/issues/yuriko627/poseidon-sol)
 [![Build Status](https://github.com/yuriko627/poseidon-sol/workflows/Build%20Status/badge.svg?branch=main)](https://github.com/yuriko627/poseidon-sol/actions?query=workflow%3A%22Build+Status%2)
 [![codecov](https://codecov.io/gh/yuriko627/poseidon-sol/branch/main/graph/badge.svg)](https://codecov.io/gh/yuriko627/poseidon-sol)
+[![npm](https://img.shields.io/npm/v/poseidon-sol)](https://www.npmjs.com/package/poseidon-sol)
 
 ## Description
 
