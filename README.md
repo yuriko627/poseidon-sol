@@ -16,8 +16,8 @@ Currently, the most widely-used Poseidon hash function for EVM is implemented in
 
 In the future, Poseidon hash might be implemented as a precompile contract in the Ethereum protocol (https://eips.ethereum.org/EIPS/eip-5988), so that people can call it with cheap gas. However, I think it would still be valuable to have a Poseidon Solidity implementation as a baseline for the performance benchmark.
 
-## How to use
-- `npm install poseidon-sol`: install 
+## How to install
+- `npm install poseidon-sol`
 
 ## How to test
 - `npm install`
