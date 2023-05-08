@@ -18,15 +18,28 @@ Currently, the most widely-used Poseidon hash function for EVM is implemented in
 
 In the future, Poseidon hash might be implemented as a precompile contract in the Ethereum protocol (https://eips.ethereum.org/EIPS/eip-5988), so that people can call it with cheap gas. However, I think it would still be valuable to have a Poseidon Solidity implementation as a baseline for the performance benchmark.
 
-## How to install
-- make sure your node version is >=16, <20
-- `npm install poseidon-sol`
+## Installation
+make sure that your noder version is >= 16.
+`npm install poseidon-sol`
 
-## How to test
-- `npm install`
-- `npx hardhat test`
+## Usage
+put the 2 elements that you want to hash into the array:
+`poseidon.hash([0, 0])`
 
-## Other commands
--  `npx hardhat compile`
--  `npx hardhat coverage`
+## Contribution
+make sure to run the test and lint before making a PR.
+
+### How to run a test
+1. `npm install`
+2. `npx hardhat test`
+
+you can see the test coverage by the following command:
+`npx hardhat coverage`
+
+### How to lint
+1. `npm install`
+2. `npx solhint contracts/Poseidon.sol`
+
+### Other commands
+- `npx hardhat compile`: compile the contract
 
