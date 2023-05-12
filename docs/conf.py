@@ -25,8 +25,6 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    'myst_parser',
-    'sphinx_copybutton'
 ]
 
 source_suffix = {
