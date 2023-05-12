@@ -2,11 +2,11 @@
 This library is a Poseidon hash function implementation in Solidity.
 
 ![](https://img.shields.io/hexpm/l/plug?color=green)
-![GitHub issues](https://img.shields.io/github/issues/yuriko627/poseidon-sol)
-[![Build Status](https://github.com/yuriko627/poseidon-sol/workflows/Build%20Status/badge.svg?branch=main)](https://github.com/yuriko627/poseidon-sol/actions?query=workflow%3A%22Build+Status%2)
-[![codecov](https://codecov.io/gh/yuriko627/poseidon-sol/branch/main/graph/badge.svg)](https://codecov.io/gh/yuriko627/poseidon-sol)
-[![npm](https://img.shields.io/npm/v/poseidon-sol)](https://www.npmjs.com/package/poseidon-sol)
-[![Documentation Status](https://readthedocs.org/projects/poseidon-sol/badge/?version=latest)](https://poseidon-sol.readthedocs.io/en/latest/?badge=latest)
+![](https://img.shields.io/github/issues/yuriko627/poseidon-sol)
+[![](https://github.com/yuriko627/poseidon-sol/workflows/Build%20Status/badge.svg?branch=main)](https://github.com/yuriko627/poseidon-sol/actions?query=workflow%3A%22Build+Status%2)
+[![](https://codecov.io/gh/yuriko627/poseidon-sol/branch/main/graph/badge.svg)](https://codecov.io/gh/yuriko627/poseidon-sol)
+[![](https://img.shields.io/npm/v/poseidon-sol)](https://www.npmjs.com/package/poseidon-sol)
+[![](https://readthedocs.org/projects/poseidon-sol/badge/?version=latest)](https://poseidon-sol.readthedocs.io/en/latest/?badge=latest)
 
 
 ## Overview
